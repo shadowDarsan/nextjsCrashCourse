@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import ArticleList from '@/components/ArticleList'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +15,8 @@ export default function Home({ articles }) {
           <title> Web Dev News</title>
           <meta name='keywords' content='web Development, Programming' />
         </Head>
+        <ArticleList articles={articles} />
 
-        <h1>Welcome to Next.js</h1>
       </div>
     </>
   )
